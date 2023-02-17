@@ -11,6 +11,7 @@ final class LoginViewController: UIViewController {
     
     //MARK: - Public Properties
     
+    
     private let scrollView: UIScrollView = {
         let scroll = UIScrollView()
         scroll.translatesAutoresizingMaskIntoConstraints = false
@@ -89,10 +90,14 @@ final class LoginViewController: UIViewController {
     //MARK: - OBJC Method
     
     @objc func checkLog() {
-        if loginField.text == "Mark" && passwordField.text == "1234" {
-            print("OK!")
+        
+        if loginField.text == "1" && passwordField.text == "1" {
+            let vc = MainTabBarController()
+            vc.modalPresentationStyle = .fullScreen
+            present(vc, animated: true)
+            print("Succes!")
         } else {
-        print("Error!Warning!")
+            print("Error!Warning!")
         }
     }
     

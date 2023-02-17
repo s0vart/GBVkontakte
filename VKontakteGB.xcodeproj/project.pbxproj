@@ -13,6 +13,14 @@
 		0819497829818F850040F6E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0819497629818F850040F6E7 /* Main.storyboard */; };
 		0819497A29818F860040F6E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0819497929818F860040F6E7 /* Assets.xcassets */; };
 		0819497D29818F860040F6E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0819497B29818F860040F6E7 /* LaunchScreen.storyboard */; };
+		08824429299033BF00932C31 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08824428299033BF00932C31 /* MainTabBarController.swift */; };
+		0882442B2990371400932C31 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0882442A2990371400932C31 /* NewsViewController.swift */; };
+		0882442D2990372800932C31 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0882442C2990372800932C31 /* FeedViewController.swift */; };
+		0882442F2990374200932C31 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0882442E2990374200932C31 /* MessageViewController.swift */; };
+		088244312990375A00932C31 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088244302990375A00932C31 /* ProfileViewController.swift */; };
+		088244382994529F00932C31 /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088244372994529F00932C31 /* NewsCell.swift */; };
+		0882445C299B95DB00932C31 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0882445B299B95DB00932C31 /* FeedCell.swift */; };
+		0882445E299B986C00932C31 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0882445D299B986C00932C31 /* MessageCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,14 @@
 		0819497929818F860040F6E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0819497C29818F860040F6E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0819497E29818F860040F6E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08824428299033BF00932C31 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		0882442A2990371400932C31 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		0882442C2990372800932C31 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		0882442E2990374200932C31 /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		088244302990375A00932C31 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		088244372994529F00932C31 /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
+		0882445B299B95DB00932C31 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		0882445D299B986C00932C31 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +93,11 @@
 			isa = PBXGroup;
 			children = (
 				08824427298EF49B00932C31 /* Login */,
+				08824428299033BF00932C31 /* MainTabBarController.swift */,
+				088244332992EA0800932C31 /* News */,
+				088244342992EA1500932C31 /* Feed */,
+				088244352992EA2800932C31 /* Message */,
+				088244362992EA3400932C31 /* Profile */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -105,6 +126,41 @@
 				0819497429818F850040F6E7 /* LoginViewController.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		088244332992EA0800932C31 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				0882442A2990371400932C31 /* NewsViewController.swift */,
+				088244372994529F00932C31 /* NewsCell.swift */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		088244342992EA1500932C31 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				0882442C2990372800932C31 /* FeedViewController.swift */,
+				0882445B299B95DB00932C31 /* FeedCell.swift */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		088244352992EA2800932C31 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				0882442E2990374200932C31 /* MessageViewController.swift */,
+				0882445D299B986C00932C31 /* MessageCell.swift */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		088244362992EA3400932C31 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				088244302990375A00932C31 /* ProfileViewController.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,9 +234,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0882445E299B986C00932C31 /* MessageCell.swift in Sources */,
 				0819497529818F850040F6E7 /* LoginViewController.swift in Sources */,
+				0882445C299B95DB00932C31 /* FeedCell.swift in Sources */,
+				088244382994529F00932C31 /* NewsCell.swift in Sources */,
+				0882442B2990371400932C31 /* NewsViewController.swift in Sources */,
+				0882442F2990374200932C31 /* MessageViewController.swift in Sources */,
 				0819497129818F850040F6E7 /* AppDelegate.swift in Sources */,
+				088244312990375A00932C31 /* ProfileViewController.swift in Sources */,
+				08824429299033BF00932C31 /* MainTabBarController.swift in Sources */,
 				0819497329818F850040F6E7 /* SceneDelegate.swift in Sources */,
+				0882442D2990372800932C31 /* FeedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
